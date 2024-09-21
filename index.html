@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="container">
             <div class="logo">
-                <h1>Madhavan</h1>
+                <h1><a href="#">Madhavan</a></h1>
             </div>
             <nav>
                 <ul>
@@ -21,8 +21,8 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="theme-toggle">
-                    <i class="fas fa-moon" id="themeIcon"></i>
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
                 </div>
             </nav>
         </div>
@@ -34,16 +34,19 @@
             <p>Software Developer | MERN Stack | Full-Stack Developer</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
+        <div class="parallax"></div>
     </section>
 
-    <section id="about" class="section about-section">
+    <section id="about" class="about-section">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate software developer with expertise in C/C++, Java, and web technologies like React and Node.js. I have experience building full-stack web applications, and my primary focus is on delivering high-quality, performant, and secure applications. My portfolio showcases some of my key projects and accomplishments.</p>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I'm a passionate software developer with expertise in C/C++, Java, and full-stack web development using React, Node.js, and MongoDB. I specialize in creating high-performance, scalable applications with a keen focus on delivering excellent user experiences.</p>
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="section skills-section">
+    <section id="skills" class="skills-section">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
@@ -57,7 +60,7 @@
         </div>
     </section>
 
-    <section id="projects" class="section projects-section">
+    <section id="projects" class="projects-section">
         <div class="container">
             <h2>Projects</h2>
             <div class="filter-buttons">
@@ -87,21 +90,21 @@
         </div>
     </section>
 
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Me</h2>
-            <form id="contactForm" action="submitForm.php" method="POST">
+            <form id="contactForm">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn">Submit</button>
                 <p id="formMessage" class="form-message"></p>
