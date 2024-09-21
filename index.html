@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Madhavan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Madhavan</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2>Hi, I'm Madhavan</h2>
+            <p>Software Developer | MERN Stack Enthusiast | React & Node.js Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm Madhavan, a passionate software developer with expertise in C/C++, Java, React, Node.js, and web development using the MERN stack. I have hands-on experience building web applications like booking systems, weather apps, and chat applications. My goal is to solve complex problems efficiently and deliver seamless user experiences.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">C/C++</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">React</div>
+                <div class="skill-card">Node.js</div>
+                <div class="skill-card">MongoDB</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">TypeScript</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal('project1')">
+                    <h3>Booking App</h3>
+                    <p>MERN stack app with secure user authentication, load balancing, and database sharding.</p>
+                </div>
+                <div class="project-card" onclick="openModal('project2')">
+                    <h3>Weather App</h3>
+                    <p>React-based app integrating OpenWeatherMap API for real-time weather updates.</p>
+                </div>
+                <div class="project-card" onclick="openModal('project3')">
+                    <h3>Chat Application</h3>
+                    <p>MERN stack app with Socket.io for real-time messaging, authentication, and chat rooms.</p>
+                </div>
+                <div class="project-card" onclick="openModal('project4')">
+                    <h3>E-commerce Web App</h3>
+                    <p>Amazon Clone using React with dynamic product data and interactive user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Madhavan | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Modal for project details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
