@@ -1,23 +1,10 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General */
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
     color: #333;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 
 .container {
@@ -25,114 +12,177 @@ header {
     margin: auto;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.5em;
+/* Header */
+.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
+    display: flex;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .theme-toggle {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 1.5em;
     cursor: pointer;
-    color: white;
+    color: #fff;
 }
 
+.theme-toggle i {
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
 .hero-section {
     height: 100vh;
     background: url('hero-bg.jpg') no-repeat center center/cover;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    position: relative;
 }
 
-.hero-content h2 {
-    font-size: 3em;
-    color: white;
+.hero-section .hero-content h2 {
+    font-size: 3rem;
+    color: #fff;
+    animation: fadeInDown 1s ease-out;
 }
 
-.hero-content p {
-    font-size: 1.5em;
-    color: white;
+.hero-section .hero-content p {
+    font-size: 1.5rem;
+    color: #fff;
+    animation: fadeInUp 1.2s ease-out;
 }
 
-.section {
+.hero-section .btn {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-section .btn:hover {
+    background-color: #555;
+}
+
+/* Parallax Effect */
+.parallax {
+    position: absolute;
+    background-image: url('parallax-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 150%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-30%);
+}
+
+@media (min-width: 600px) {
+    .parallax {
+        transform: translateY(-50%);
+    }
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
     padding: 60px 0;
 }
 
-h2 {
+.about-section h2 {
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.about-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: auto;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .skills-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
 }
 
 .skill-card {
-    background: white;
+    background-color: #fff;
     border: 1px solid #ddd;
-    width: 150px;
-    margin: 15px;
     padding: 20px;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .skill-card i {
-    font-size: 2em;
-    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.projects-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/* Projects Section */
+.projects-section {
+    background-color: #fff;
+    padding: 60px 0;
 }
 
-.project-card {
-    background: white;
-    border: 1px solid #ddd;
-    width: 45%;
-    margin: 15px;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .filter-buttons {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.filter-btn {
+.filter-buttons button {
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
@@ -143,15 +193,49 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-.filter-btn.active, .filter-btn:hover {
+.filter-buttons button.active,
+.filter-buttons button:hover {
     background-color: #555;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .contact-section .form-group {
     margin-bottom: 20px;
 }
 
-.contact-section input, .contact-section textarea {
+.contact-section input,
+.contact-section textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -165,21 +249,24 @@ footer {
     padding: 20px 0;
 }
 
-/* Dark Mode */
-body.dark {
-    background-color: #333;
-    color: white;
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-body.dark .skill-card, body.dark .project-card {
-    background: #444;
-    border: none;
-}
-
-body.dark header {
-    background-color: #444;
-}
-
-body.dark footer {
-    background-color: #444;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
