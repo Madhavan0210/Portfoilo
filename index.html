@@ -1,123 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Madhavan's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Andrew's Hood</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
 </head>
-<body>
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <h1><a href="#">Madhavan</a></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="theme-toggle" id="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+<body class="adaptive">
+<div class="landing">
+    <div class="my-name">
+        hi, i am andrew!
+    </div>
+    <div class="links-container" id="navbar">
+        <a href="#about">about</a>
+        <span class="separator">|</span>
+        <a href="#projects">projects</a>
+        <span class="separator">|</span>
+        <a href="#hobbies">hobbies</a>
+        <span class="separator">|</span>
+        <a href="#contact">contact</a>
+        <span class="separator">|</span>
+        <a href="resume-andrewsanthoshc.pdf" target="_blank">resume</a>
+    </div>
+</div>
 
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h2>Hi, I'm Madhavan</h2>
-            <p>Software Developer | MERN Stack | Full-Stack Developer</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-        <div class="parallax"></div>
-    </section>
+<div class="content-block" id="about">
+    <hr>
+    <h2>about me</h2>
+    <p>i am andrew santhosh and i &#10084;&#65039; ai !</p>
+    <p>i have a bachelors degree in <b>artificial intelligence and data science</b>&#129302;&#129504;.
+        i completed my under grad in 2024. </p>
+    <p>i have good knowledge in the field of <b>deep learning</b>.</p>
+    <p>i can write code in <b>python, java and c#</b> and i have a good understanding about <b>object-oriented
+        programing</b> and <b>asynchronous paradigm</b>.</p>
+    <p>my passion for programming began in my late teens which is when i got into <b>computers</b>. i have compiled
+        <b>aosp roms</b> for my phones and tablets upstreaming <b>linux kernels</b> for the devices is use.</p>
+    <p>i can navigate my way around a <b>&#128039;linux terminal</b> and i know how to <b>git</b>!</p>
+    <p>during covid i fumbled my way into <b>python</b> and i got interested in <b>deep learning</b> which is why i
+        pursued <b>b.tech</b>&#127891;in ai & ds</p>
+    <p>i have used <b>keras, pytorch</b> and <b>&#129303;transformers</b> libraries in many of my projects.</p>
+    <p>recently i am experimenting with <b>transformer architecture</b> which is used in <b>language modelling (llm)</b>
+        and i have a good understanding about <b>training</b> and <b>fine-tuning</b>
+        a language model and i have experience using <b>retrieval augmented generation (rag)</b> with them.</p>
+    <hr>
+</div>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>I'm a passionate software developer with expertise in C/C++, Java, and full-stack web development using React, Node.js, and MongoDB. I specialize in creating high-performance, scalable applications with a keen focus on delivering excellent user experiences.</p>
-            </div>
-        </div>
-    </section>
+<div class="content-block" id="projects">
+    <hr>
+    <h2>projects i have done</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/andrew264/Smol-LM" target="_blank">smol-lm</a>
+            <p>in this repository contains all my experiments in language modeling, pre-training, fine-tuning, rag,
+                etc...</p>
+            <p>includes data processing&#128218;, tokenizer training, tokenization, data preparation, model inference
+                code</p>
+        </li>
+        <li>
+            <a href="https://github.com/andrew264/Assistant" target="_blank">assistant</a>
+            <p>this is my first big passion project that got me deep into coding. this is a discord bot&#129302;.</p>
+            <p>this has many features including playing games like tictactoe, rock paper scissor, hand cricket with your
+                friends. you can use this to listen to music from youtube and spotify with your friends</p>
+            <p>currently i am rewriting this <a href="https://github.com/andrew264/Assistant.Net">bot in c#</a> cuz one
+                arsehole convinced me into doing so</p>
+        </li>
+        <li>
+            <a href="https://github.com/andrew264/QuickChat" target="_blank">quick-chat</a>
+            <p>this is a chat app&#128172; with both client and server that runs in the local network using udp/tcp
+                protocols</p>
+            <p>it has one big trick up its sleeve, it requires zero configuration from the user, no more entering ip
+                addresses into the commandline to connect with other users in the local area network!</p>
+            <p>i wrote this in java with gui. i also tried rewriting
+                <a href="https://github.com/andrew264/QuickChat-rust" target="_blank">this in rust &#129408;</a> because
+                why not! </p>
+        </li>
+        <li>
+            <a href="https://github.com/andrew264/palm-control" target="_blank">palm-control</a>
+            <p>this is my final year project. it uses google's mediapipe framework&#128075; to control mouse&#128433;&#65039;</p>
+            <p>you might have seen a thousand project like this but hear me out, this is not like the rest of them</p>
+            <p>it supports mouse acceleration, smoothness control, a gui, ability to switch pointer finger, you can
+                drag,
+                scroll, control volume, copy, paste, use speech-to-text for keyboard inputs and more...</p>
+            <p>heck i even wrote my own app with gui to prepare the dataset required to train the classifier, and wrote
+                my
+                own neural net architecture that is as small as possible without compromising on model accuracy</p>
+        </li>
+        <li>
+            <a href="https://github.com/andrew264/farm-hub" target="_blank">farm-hub</a>
+            <p>this is a project i did with my friends for a hackathon. this is a web app that helps young people who
+                are new to farming&#129489;&zwj;&#127806;</p>
+            <p>you can send a picture of a plant or any infected part of the plant to a language model</p>
+            <p>this uses a image classifier behind the scene to help llm see the contents of the image that is attached
+                and can help with people</p>
+        </li>
+    </ul>
+    <hr>
+</div>
 
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card"><i class="fab fa-react"></i><p>React</p></div>
-                <div class="skill-card"><i class="fab fa-node-js"></i><p>Node.js</p></div>
-                <div class="skill-card"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
-                <div class="skill-card"><i class="fab fa-java"></i><p>Java</p></div>
-                <div class="skill-card"><i class="fas fa-database"></i><p>MongoDB</p></div>
-                <div class="skill-card"><i class="fas fa-code"></i><p>TypeScript</p></div>
-            </div>
-        </div>
-    </section>
+<div class="content-block" id="hobbies">
+    <hr>
+    <h2>hobbies i pursue</h2>
+    <p>i like <b>video games</b> &#127918;</p>
+    <p>video games is what helped me get a lot of friends for my introvert ass</p>
+    <p>favourite game: gta v</p>
+    <p>i see video games as a way to relax myself during high tension scenarios</p>
+    <p>i also listen to a lot of <b>music</b>&#127911;</p>
+    <p>my favorite genres include: pop, hiphop and rap.</p>
+    <p>some of my favorite artists include: eminem, kendrick lamar etc...</p>
+    <p>i occasionally check on <b>social media</b>&#127759; just to keep me updated on stuff about what other people are
+        up to nowadays, and i usually end up disappointed.</p>
+    <p>i also like to <b>watch movies&#127871; and tv shows&#128250;</b> with my homies on discord</p>
+    <hr>
+</div>
 
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="frontend">Frontend</button>
-                <button class="filter-btn" data-filter="backend">Backend</button>
-                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card fullstack">
-                    <h3>Booking App</h3>
-                    <p>MERN stack app with secure user authentication and performance optimizations.</p>
-                </div>
-                <div class="project-card frontend">
-                    <h3>Weather App</h3>
-                    <p>React app integrating OpenWeatherMap API for real-time weather updates.</p>
-                </div>
-                <div class="project-card fullstack">
-                    <h3>Chat Application</h3>
-                    <p>MERN stack chat app with Socket.io for real-time messaging and secure APIs.</p>
-                </div>
-                <div class="project-card backend">
-                    <h3>Task Management API</h3>
-                    <p>A RESTful API built with Node.js and MongoDB for managing tasks.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="content-block" id="contact">
+    <hr>
+    <h2>contact me</h2>
+    <p>you can email me at <u>[andrewsanthoshc]@gmail.com</u> | without the brackets obviously</p>
+    <p>my &Xopf; profile: <a href="https://twitter.com/andrew264s" target="_blank">@andrew264s</a></p>
+    <p>my github: <a href="https://github.com/andrew264" target="_blank">@andrew264</a></p>
+    <p>my linkedin: <a href="https://www.linkedin.com/in/andrew264" target="_blank">@andrew264</a></p>
+    <p>my telegram: <a href="https://t.me/andrewsanthosh" target="_blank">@andrewsanthosh</a></p>
+    <hr>
+</div>
+<hr>
+<p>&copy;&#65039; 2024 andrew264</p>
+<p>i will be casting testicular torsion on anyone who tries copying this website</p>
+<hr>
+<script>
+    window.onscroll = function () {
+        stickyNavbar()
+    };
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn">Submit</button>
-                <p id="formMessage" class="form-message"></p>
-            </form>
-        </div>
-    </section>
+    const navbar = document.getElementById("navbar");
+    const sticky = navbar.offsetTop;
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Madhavan | All Rights Reserved</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    function stickyNavbar() {
+        if (window.scrollY >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 </html>
