@@ -1,27 +1,24 @@
 // Dark Mode Toggle
-const themeIcon = document.getElementById('themeIcon');
+const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
-themeIcon.addEventListener('click', () => {
+if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark');
+    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+}
+
+themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark');
     if (body.classList.contains('dark')) {
-        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('darkMode', 'enabled');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
     } else {
-        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('darkMode', 'disabled');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
     }
 });
 
-// Smooth Scrolling for Navigation
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-// Project Filtering
+// Filter Projects
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -32,27 +29,31 @@ filterButtons.forEach(button => {
 
         const filter = button.getAttribute('data-filter');
         projectCards.forEach(card => {
-            card.style.display = filter === 'all' || card.classList.contains(filter) ? 'block' : 'none';
+            if (filter === 'all' || card.classList.contains(filter)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
         });
     });
 });
 
 // Contact Form Submission
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', function(e) {
+contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
     const formData = new FormData(contactForm);
     fetch('submitForm.php', {
         method: 'POST',
-        body: formData
+        body: formData,
     })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('formMessage').textContent = 'Thank you! Your message has been sent.';
-        contactForm.reset();
-    })
-    .catch(error => {
-        document.getElementById('formMessage').textContent = 'Oops! Something went wrong. Please try again.';
-    });
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('formMessage').textContent = 'Message sent successfully!';
+            contactForm.reset();
+        })
+        .catch(error => {
+            document.getElementById('formMessage').textContent = 'Something went wrong. Please try again.';
+        });
 });
