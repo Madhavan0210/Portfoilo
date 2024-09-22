@@ -1,146 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Andrew's Hood</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Madhavan U | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class="adaptive">
-<div class="landing">
-    <div class="my-name">
-        hi, i am andrew!
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Madhavan U</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-    <div class="links-container" id="navbar">
-        <a href="#about">about</a>
-        <span class="separator">|</span>
-        <a href="#projects">projects</a>
-        <span class="separator">|</span>
-        <a href="#hobbies">hobbies</a>
-        <span class="separator">|</span>
-        <a href="#contact">contact</a>
-        <span class="separator">|</span>
-        <a href="resume-andrewsanthoshc.pdf" target="_blank">resume</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Hello, I'm <span>Madhavan U</span></h1>
+        <p>Software Developer | Web Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
     </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm Madhavan U, a software developer with a passion for creating dynamic and responsive web applications. I graduated with a BCA degree from C.A. Abdul Hakeem College and specialize in MERN stack development, building interactive and user-friendly websites.
+      </p>
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>C++</li>
+            <li>DSA</li>
+           <li>Java</li>
+           <li>HTML</li>
+           <li>CSS</li>
+           <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>SQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Booking App</h3>
+          <h4>MERN stack</h4>
+          <p>Developed secure user authentication and access controls for diverse users</p>
+        </div>
+        <div class="project-card">
+          <h3>Weather App</h3>
+          <h4>React.js</h4>
+          <p>Integrated OpenWeatherMap API to dynamically fetch and display accurately</p>
+        </div>
+        <div class="project-card">
+          <h3>E-COMMERCE WEB APP</h3>
+          <h4>MERN Stack</h4>
+          <p>Designed and implemented a responsive front-end for an Amazon Clone.</p>
+        </div>
+        <div class="project-card">
+          <h3>CHAT APPLICATION</h3>
+          <h4>MERN Stack,Socket io</h4>
+          <p>Implement features such as user authentication, chat rooms, and direct
+            messaging. .</p>
+        </div>
+        <div class="project-card">
+          <h3>Hotel Management System</h3>
+          <h4>C++</h4>
+          <p>A hotel management system built using C++ with robust booking features.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="coding-profiles" class="coding-profiles-section">
+    <h2>Coding Profiles</h2>
+    <div class="profiles-grid">
+        <!-- LeetCode Profile -->
+        <div class="profile-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="profile-logo">
+            <h3>LeetCode</h3>
+            <a href="https://leetcode.com/u/Madhavan0210/" target="_blank" class="profile-link">
+                <i class="fas fa-link"></i> View Profile
+            </a>
+        </div>
+
+      
+        <!-- GeeksforGeeks Profile -->
+        <div class="profile-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg" alt="GeeksforGeeks" class="profile-logo">
+            <h3>GeeksforGeeks</h3>
+            <a href="https://www.geeksforgeeks.org/user/madhavan0210/" target="_blank" class="profile-link">
+                <i class="fas fa-link"></i> View Profile
+            </a>
+        </div>
+        <!--Byee-->
+        <div class="profile-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="profile-logo">
+            <h3>linkedin</h3>
+            <a href="https://www.linkedin.com/in/madhavanumapathi1008/" target="_blank" class="profile-link">
+                <i class="fas fa-link"></i> View Profile
+            </a>
+        </div>
+        <!-- Resume Download -->
+<div class="profile-card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="Resume" class="profile-logo">
+  <h3>Resume</h3>
+  <a href="https://github.com/Madhavan0210/Portfoilo/blob/main/MadhavanSDE.pdf" target="_blank" class="profile-link" download>
+      <i class="fas fa-download"></i> Download
+  </a>
 </div>
 
-<div class="content-block" id="about">
-    <hr>
-    <h2>about me</h2>
-    <p>i am andrew santhosh and i &#10084;&#65039; ai !</p>
-    <p>i have a bachelors degree in <b>artificial intelligence and data science</b>&#129302;&#129504;.
-        i completed my under grad in 2024. </p>
-    <p>i have good knowledge in the field of <b>deep learning</b>.</p>
-    <p>i can write code in <b>python, java and c#</b> and i have a good understanding about <b>object-oriented
-        programing</b> and <b>asynchronous paradigm</b>.</p>
-    <p>my passion for programming began in my late teens which is when i got into <b>computers</b>. i have compiled
-        <b>aosp roms</b> for my phones and tablets upstreaming <b>linux kernels</b> for the devices is use.</p>
-    <p>i can navigate my way around a <b>&#128039;linux terminal</b> and i know how to <b>git</b>!</p>
-    <p>during covid i fumbled my way into <b>python</b> and i got interested in <b>deep learning</b> which is why i
-        pursued <b>b.tech</b>&#127891;in ai & ds</p>
-    <p>i have used <b>keras, pytorch</b> and <b>&#129303;transformers</b> libraries in many of my projects.</p>
-    <p>recently i am experimenting with <b>transformer architecture</b> which is used in <b>language modelling (llm)</b>
-        and i have a good understanding about <b>training</b> and <b>fine-tuning</b>
-        a language model and i have experience using <b>retrieval augmented generation (rag)</b> with them.</p>
-    <hr>
-</div>
+        <!-- GitHub Profile -->
+        <div class="profile-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <a href="https://github.com/madhavan0210" target="_blank" class="profile-link">
+                <i class="fas fa-link"></i> View Profile
+            </a>
+        </div>
+    </div>
+</section>
 
-<div class="content-block" id="projects">
-    <hr>
-    <h2>projects i have done</h2>
-    <ul>
-        <li>
-            <a href="https://github.com/andrew264/Smol-LM" target="_blank">smol-lm</a>
-            <p>in this repository contains all my experiments in language modeling, pre-training, fine-tuning, rag,
-                etc...</p>
-            <p>includes data processing&#128218;, tokenizer training, tokenization, data preparation, model inference
-                code</p>
-        </li>
-        <li>
-            <a href="https://github.com/andrew264/Assistant" target="_blank">assistant</a>
-            <p>this is my first big passion project that got me deep into coding. this is a discord bot&#129302;.</p>
-            <p>this has many features including playing games like tictactoe, rock paper scissor, hand cricket with your
-                friends. you can use this to listen to music from youtube and spotify with your friends</p>
-            <p>currently i am rewriting this <a href="https://github.com/andrew264/Assistant.Net">bot in c#</a> cuz one
-                arsehole convinced me into doing so</p>
-        </li>
-        <li>
-            <a href="https://github.com/andrew264/QuickChat" target="_blank">quick-chat</a>
-            <p>this is a chat app&#128172; with both client and server that runs in the local network using udp/tcp
-                protocols</p>
-            <p>it has one big trick up its sleeve, it requires zero configuration from the user, no more entering ip
-                addresses into the commandline to connect with other users in the local area network!</p>
-            <p>i wrote this in java with gui. i also tried rewriting
-                <a href="https://github.com/andrew264/QuickChat-rust" target="_blank">this in rust &#129408;</a> because
-                why not! </p>
-        </li>
-        <li>
-            <a href="https://github.com/andrew264/palm-control" target="_blank">palm-control</a>
-            <p>this is my final year project. it uses google's mediapipe framework&#128075; to control mouse&#128433;&#65039;</p>
-            <p>you might have seen a thousand project like this but hear me out, this is not like the rest of them</p>
-            <p>it supports mouse acceleration, smoothness control, a gui, ability to switch pointer finger, you can
-                drag,
-                scroll, control volume, copy, paste, use speech-to-text for keyboard inputs and more...</p>
-            <p>heck i even wrote my own app with gui to prepare the dataset required to train the classifier, and wrote
-                my
-                own neural net architecture that is as small as possible without compromising on model accuracy</p>
-        </li>
-        <li>
-            <a href="https://github.com/andrew264/farm-hub" target="_blank">farm-hub</a>
-            <p>this is a project i did with my friends for a hackathon. this is a web app that helps young people who
-                are new to farming&#129489;&zwj;&#127806;</p>
-            <p>you can send a picture of a plant or any infected part of the plant to a language model</p>
-            <p>this uses a image classifier behind the scene to help llm see the contents of the image that is attached
-                and can help with people</p>
-        </li>
-    </ul>
-    <hr>
-</div>
 
-<div class="content-block" id="hobbies">
-    <hr>
-    <h2>hobbies i pursue</h2>
-    <p>i like <b>video games</b> &#127918;</p>
-    <p>video games is what helped me get a lot of friends for my introvert ass</p>
-    <p>favourite game: gta v</p>
-    <p>i see video games as a way to relax myself during high tension scenarios</p>
-    <p>i also listen to a lot of <b>music</b>&#127911;</p>
-    <p>my favorite genres include: pop, hiphop and rap.</p>
-    <p>some of my favorite artists include: eminem, kendrick lamar etc...</p>
-    <p>i occasionally check on <b>social media</b>&#127759; just to keep me updated on stuff about what other people are
-        up to nowadays, and i usually end up disappointed.</p>
-    <p>i also like to <b>watch movies&#127871; and tv shows&#128250;</b> with my homies on discord</p>
-    <hr>
-</div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <span id="msg"></span>
+    </div>
+</section>
 
-<div class="content-block" id="contact">
-    <hr>
-    <h2>contact me</h2>
-    <p>you can email me at <u>[andrewsanthoshc]@gmail.com</u> | without the brackets obviously</p>
-    <p>my &Xopf; profile: <a href="https://twitter.com/andrew264s" target="_blank">@andrew264s</a></p>
-    <p>my github: <a href="https://github.com/andrew264" target="_blank">@andrew264</a></p>
-    <p>my linkedin: <a href="https://www.linkedin.com/in/andrew264" target="_blank">@andrew264</a></p>
-    <p>my telegram: <a href="https://t.me/andrewsanthosh" target="_blank">@andrewsanthosh</a></p>
-    <hr>
-</div>
-<hr>
-<p>&copy;&#65039; 2024 andrew264</p>
-<p>i will be casting testicular torsion on anyone who tries copying this website</p>
-<hr>
 <script>
-    window.onscroll = function () {
-        stickyNavbar()
-    };
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent the form from submitting the traditional way
 
-    const navbar = document.getElementById("navbar");
-    const sticky = navbar.offsetTop;
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
 
-    function stickyNavbar() {
-        if (window.scrollY >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
+    fetch("AKfycbzqIrpUzFQRssCHO4St6_IXkumcHq7hHZQ0VhSLVB8", {
+      method: "POST",
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message
+      }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(responseData => {
+      document.getElementById("msg").innerText = "Message sent successfully!";
+      document.getElementById("contact-form").reset(); // Reset the form
+    })
+    .catch(error => {
+      document.getElementById("msg").innerText = "There was an error!";
+    });
+  });
 </script>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Madhavan U | Software Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
